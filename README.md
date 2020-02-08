@@ -7,6 +7,8 @@ Two Player Card Game
  - Will write detailed instructions for api
  and how to run development server
  
+ - Database Structure - db_structure.png
+ 
  
  The main game playing APIs are:
  1. "http://localhost:8000/games/"
@@ -101,5 +103,3 @@ Two Player Card Game
     "card": 135
 }`
     
-
- - db structure -> db_structure.png
