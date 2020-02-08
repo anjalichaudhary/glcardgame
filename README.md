@@ -1,12 +1,33 @@
 # glcardgame
 Two Player Card Game
 
+##### Steps start the application 
+After cloning the repository : 
+
+   There are a couple of things you need to set up before you can start your application.
+   1. Create docker volume for our application's db for local environment
+   
+        `docker volume create --name=cgpgdata`
+   2. Build and Run
+   
+        `docker-compose up --build`
+           
 ##### ENVs are not supposed to be pushed
  - I have pushed local envs just for reference
  
- - Will write detailed instructions for api
- and how to run development server
- 
+
+#### Architecture of Application
+
+Dockerized Application
+
+  Services - django(backend) and postgres(database)
+  
+  Rest APIs built using
+  
+    Django Rest framework
+  Database
+  
+    Postgres
  - Database Structure - db_structure.png
  
  
