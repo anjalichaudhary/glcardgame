@@ -34,7 +34,7 @@ class Migration(migrations.Migration):
                 ('date_modified', models.DateTimeField(auto_now=True)),
                 ('card', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='core.Card')),
                 ('game', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='core.Game')),
-                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
+                ('player', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
             ],
         ),
     ]

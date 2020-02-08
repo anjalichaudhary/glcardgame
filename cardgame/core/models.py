@@ -5,7 +5,7 @@ from enum import Enum
 
 
 class User(AbstractBaseUser, PermissionsMixin):
-    """ Custom user model that supports using email instead of username """
+    """ Custom player model that supports using email instead of username """
 
     username = models.CharField(unique=True, max_length=20)
     name = models.CharField(max_length=255)
@@ -81,11 +81,11 @@ class Game(models.Model):
 
 
 class CardSequence(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    player = models.ForeignKey(User, on_delete=models.CASCADE)
     game = models.ForeignKey(Game, on_delete=models.CASCADE)
     card = models.ForeignKey(Card, on_delete=models.CASCADE)
     date_created = models.DateTimeField(auto_now_add=True)
     date_modified = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f'Card - {self.card} drawn by {self.user}'
+        return f'Card - {self.card} drawn by {self.player}'
