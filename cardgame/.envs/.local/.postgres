@@ -1,0 +1,4 @@
+POSTGRES_HOST=db
+POSTGRES_DB=cardgame_db
+POSTGRES_USER=test_admin
+POSTGRES_PASSWORD=supersecretpassword

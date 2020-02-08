@@ -1,0 +1,4 @@
+# ####### django application secret key ####### #
+APP_SECRET_KEY=hdym#+wbmv02a&-$k-05g@f7_p!k=uzk(k1tjwcn47bxe+iuyo
+
+DJANGO_SETTINGS_MODULE=cardgame.settings
